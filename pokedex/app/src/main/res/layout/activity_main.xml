@@ -7,19 +7,20 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnPesquisar"
+        android:id="@+id/btn_pesquisar"
+        style="@android:style/Widget.Material.Button"
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:text="Pesquisar"
-        app:layout_constraintBottom_toBottomOf="@+id/inpPesquisar"
+        app:layout_constraintBottom_toBottomOf="@+id/input_pesquisar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/inpPesquisar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/input_pesquisar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/inpPesquisar"
+        android:id="@+id/input_pesquisar"
         android:layout_width="251dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -27,33 +28,40 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/label_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome Pokémon:"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/input_pesquisar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintVertical_bias="0.177" />
 
     <TextView
-        android:id="@+id/nomePokemon"
+        android:id="@+id/nome_pokemon"
+        android:layout_width="218dp"
+        android:layout_height="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/label_nome" />
+
+    <Button
+        android:id="@+id/btn_avancar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        android:text="Avançar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/label_nome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
