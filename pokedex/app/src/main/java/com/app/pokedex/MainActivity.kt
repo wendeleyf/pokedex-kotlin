@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar!!.title = "Pokedex"
+        supportActionBar!!.title = "Pokedex Unipê"
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -31,7 +31,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent (this@MainActivity, ContaActivity::class.java))
 
             // Exibindo mensagem em um toast
-            R.id.sair -> Toast.makeText(applicationContext, "Saindo", Toast.LENGTH_SHORT).show()
+            R.id.sair -> {
+                Toast.makeText(applicationContext, "Saindo", Toast.LENGTH_SHORT).show()
+                startActivity(Intent (this@MainActivity, LoginActivity::class.java))
+            }
         }
         return super .onOptionsItemSelected(item)
     }
