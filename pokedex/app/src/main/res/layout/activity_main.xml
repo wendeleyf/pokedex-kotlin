@@ -106,131 +106,124 @@
                             android:gravity="center_horizontal|center_vertical"
                             android:orientation="horizontal">
 
-                            <androidx.cardview.widget.CardView
+                            <HorizontalScrollView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                app:cardBackgroundColor="#73FFAD"
-                                app:cardCornerRadius="5dp">
+                                android:layout_height="match_parent"
+                                android:padding="5dp">
 
-                                <HorizontalScrollView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:padding="5dp">
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_gravity="center"
-                                        android:orientation="horizontal">
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
 
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:orientation="vertical">
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Peso:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Peso:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Altura:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Categoria:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Habilidade:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:id="@+id/peso_pokemon"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="6.9 kg"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                            <TextView
-                                                android:id="@+id/altura_pokemon"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="0.7 m"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Altura:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
 
-                                            <TextView
-                                                android:id="@+id/categoria_pokemon"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Semente"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Categoria:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:id="@+id/habilidade_pokemon"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Overgrow"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                        </LinearLayout>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Habilidade:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
                                     </LinearLayout>
 
-                                </HorizontalScrollView>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:orientation="vertical">
 
-                            </androidx.cardview.widget.CardView>
+                                        <TextView
+                                            android:id="@+id/peso_pokemon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="6.9 kg"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/altura_pokemon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="0.7 m"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+
+                                        <TextView
+                                            android:id="@+id/categoria_pokemon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Semente"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/habilidade_pokemon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Overgrow"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
 
                         </LinearLayout>
 
@@ -315,131 +308,124 @@
                             android:gravity="center_horizontal|center_vertical"
                             android:orientation="horizontal">
 
-                            <androidx.cardview.widget.CardView
+                            <HorizontalScrollView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                app:cardBackgroundColor="#E86C5A"
-                                app:cardCornerRadius="5dp">
+                                android:layout_height="match_parent"
+                                android:padding="5dp">
 
-                                <HorizontalScrollView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:padding="5dp">
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_gravity="center"
-                                        android:orientation="horizontal">
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
 
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:orientation="vertical">
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Peso:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Peso:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Altura:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Categoria:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Habilidade:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:id="@+id/peso_pokemon2"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="8.5 kg"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                            <TextView
-                                                android:id="@+id/altura_pokemon2"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="0.6 m"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Altura:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
 
-                                            <TextView
-                                                android:id="@+id/categoria_pokemon2"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Lagarto"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Categoria:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:id="@+id/habilidade_pokemon2"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Blaze"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                        </LinearLayout>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Habilidade:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
                                     </LinearLayout>
 
-                                </HorizontalScrollView>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:orientation="vertical">
 
-                            </androidx.cardview.widget.CardView>
+                                        <TextView
+                                            android:id="@+id/peso_pokemon2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="8.5 kg"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/altura_pokemon2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="0.6 m"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+
+                                        <TextView
+                                            android:id="@+id/categoria_pokemon2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Lagarto"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/habilidade_pokemon2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Blaze"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
 
                         </LinearLayout>
 
@@ -524,131 +510,124 @@
                             android:gravity="center_horizontal|center_vertical"
                             android:orientation="horizontal">
 
-                            <androidx.cardview.widget.CardView
+                            <HorizontalScrollView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                app:cardBackgroundColor="#5A9EE8"
-                                app:cardCornerRadius="5dp">
+                                android:layout_height="match_parent"
+                                android:padding="5dp">
 
-                                <HorizontalScrollView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:padding="5dp">
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_gravity="center"
-                                        android:orientation="horizontal">
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
 
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
+                                        <TextView
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:orientation="vertical">
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Peso:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Peso:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Altura:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Categoria:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Habilidade:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
+                                        <TextView
+                                            android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:id="@+id/peso_pokemon3"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="9.0 kg"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                            <TextView
-                                                android:id="@+id/altura_pokemon3"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="0.5 m"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Altura:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
 
-                                            <TextView
-                                                android:id="@+id/categoria_pokemon3"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Tartaruga"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Categoria:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:id="@+id/habilidade_pokemon3"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Torrent"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                        </LinearLayout>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Habilidade:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
                                     </LinearLayout>
 
-                                </HorizontalScrollView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:orientation="vertical">
 
-                            </androidx.cardview.widget.CardView>
+                                        <TextView
+                                            android:id="@+id/peso_pokemon3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="9.0 kg"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/altura_pokemon3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="0.5 m"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+
+                                        <TextView
+                                            android:id="@+id/categoria_pokemon3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Tartaruga"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/habilidade_pokemon3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Torrent"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
 
                         </LinearLayout>
 
@@ -734,131 +713,124 @@
                             android:gravity="center_horizontal|center_vertical"
                             android:orientation="horizontal">
 
-                            <androidx.cardview.widget.CardView
+                            <HorizontalScrollView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                app:cardBackgroundColor="#FFCD63"
-                                app:cardCornerRadius="5dp">
+                                android:layout_height="match_parent"
+                                android:padding="5dp">
 
-                                <HorizontalScrollView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:padding="5dp">
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_gravity="center"
-                                        android:orientation="horizontal">
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
 
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:orientation="vertical">
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Peso:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Peso:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Altura:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Categoria:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Habilidade:"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp"
-                                                android:textStyle="bold" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:id="@+id/peso_pokemon4"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="6.0 kg"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                            <TextView
-                                                android:id="@+id/altura_pokemon4"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="0.4 m"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Altura:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
 
-                                            <TextView
-                                                android:id="@+id/categoria_pokemon4"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="2dp"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Rato"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Categoria:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
-                                            <TextView
-                                                android:id="@+id/habilidade_pokemon4"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontFamily="sans-serif-smallcaps"
-                                                android:text="Static"
-                                                android:textAllCaps="true"
-                                                android:textColor="#313131"
-                                                android:textSize="10dp" />
-
-                                        </LinearLayout>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Habilidade:"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold" />
 
                                     </LinearLayout>
 
-                                </HorizontalScrollView>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:orientation="vertical">
 
-                            </androidx.cardview.widget.CardView>
+                                        <TextView
+                                            android:id="@+id/peso_pokemon4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="6.0 kg"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/altura_pokemon4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="0.4 m"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+
+                                        <TextView
+                                            android:id="@+id/categoria_pokemon4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="2dp"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Rato"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                        <TextView
+                                            android:id="@+id/habilidade_pokemon4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-smallcaps"
+                                            android:text="Static"
+                                            android:textAllCaps="true"
+                                            android:textColor="#313131"
+                                            android:textSize="10dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
 
                         </LinearLayout>
 
